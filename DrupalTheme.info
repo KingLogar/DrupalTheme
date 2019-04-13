@@ -1,0 +1,9 @@
+name = DrupalTheme
+description = A sample Drupal theme.
+package = core
+core = 7.x
+stylesheets[all][] = style.css
+scripts[] = scripts.js
+regions[page_top] = Page Top
+regions[content] = Content
+regions[page_bottom] = Page Bottom
