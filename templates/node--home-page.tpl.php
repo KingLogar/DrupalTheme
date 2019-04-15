@@ -80,13 +80,53 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-print $node->nid;
-?>" class="<?php
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Wordpress Blog</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+<div class = "container">
 
-print $classes;
-?> clearfix"<?php
+    <div class = "jumbotron">
+        <?php query_posts('posts_per_page=1');
+        while(have_posts()) : the_post(); ?>
+            <div>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <p><?php the_excerpt(); ?></p>
 
-print $attributes;
-?>>
+            </div>
+        <?php endwhile; wp_reset_query();?>
+    </div>
+
+    <div class = "panel panel-default panel-body">
+        <div class = "row">
+            <div class = "col-md-2">
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href = "#">Category One</a></li>
+                    <li><a href = "#">Category Two</a></li>
+                    <li><a href = "#">Category Three</a></li>
+                    <li><a href = "#">Category Four</a></li>
+                </ul>
+            </div>
+            <div class = "col-md-10">
+                <a href = "#"><h3>This random post is really awesome!</h3></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu erat, congue eget ornare et, luctus eget purus. Etiam et risus metus. Nam sed mi tellus. Mauris molestie massa eu metus tempor, in hendrerit arcu adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class = "text-muted">Posted by Ahsan on January 1st 2014</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
