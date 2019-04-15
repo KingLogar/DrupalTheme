@@ -6,20 +6,20 @@ body.overlay {
   color: #3b3b3b;
 }
 .comment .comment-arrow {
-  border-color: #ffffff;
+  border-color: #3b3b3b;
 }
 #page,
 #main-wrapper,
 #main-menu-links li a.active,
 #main-menu-links li.active-trail a {
-  background: #ffffff;
+  background: #3b3b3b;
 }
 .tabs ul.primary li a.active {
-  background-color: #ffffff;
+  background-color: #5a5a5a;
 }
 .tabs ul.primary li.active a {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ffffff;
+  background-color: #3b3b3b;
+  border-bottom: 1px solid #3b3b3b;
 }
 #header {
   background-color: #48a9e4;
@@ -41,12 +41,12 @@ a:active {
   color: #23aeff;
 }
 .sidebar .block {
-  background-color: #f6f6f2;
-  border-color: #f9f9f9;
+  background-color: #3b3b3b;
+  border-color: #3b3b3b;
 }
 #page-wrapper,
 #footer-wrapper {
-  background: #292929;
+  background: #5a5a5a;
 }
 .region-header,
 .region-header a,
@@ -54,5 +54,5 @@ a:active {
 #name-and-slogan,
 #name-and-slogan a,
 #secondary-menu-links li a {
-  color: #fffeff;
+  color: #5a5a5a;
 }
